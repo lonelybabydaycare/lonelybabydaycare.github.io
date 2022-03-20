@@ -604,13 +604,6 @@ progress {
   height: auto;
 }
 
-.generatedBaby {
-  max-width: 400px;
-  height: 400px;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -11417,8 +11410,40 @@ html {
     background: #1abc9c;
   }
 
+.background_container {
+  position: relative;
+  width: 100%;
+}
+
+.background_image {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+
   .nav_discord_purple_vzs {
     background: #5865F2;
+  }
+
+  .generate_background {
+    width: 400px;
+    content: "";
+    background-color: white;
+    height: 400px;
+    z-index: -3;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+  .generatedBaby {
+    max-width: 400px;
+    height: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 6;
   }
 
   #mainNav.navbar-shrink {
@@ -11458,8 +11483,11 @@ html {
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
+
 .masthead .masthead-avatar {
   width: 30rem;
+  z-index: 3;
+  position: relative;
 }
 
 @media (min-width: 992px) {
