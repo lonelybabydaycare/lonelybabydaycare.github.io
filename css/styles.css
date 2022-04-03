@@ -11438,8 +11438,15 @@ html {
   } 
 
   .meetTheTeam {
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .decorate {
+    height: 100%
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
